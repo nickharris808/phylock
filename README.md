@@ -1,4 +1,4 @@
-# 🛡️ Portfolio B: Sovereign Handshake
+# 🛡️ Phylock: Sovereign Handshake
 ## Professional-Grade 5G/6G Security IP Portfolio
 
 <p align="center">
