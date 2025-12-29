@@ -1,0 +1,5 @@
+format,size_bytes,budget_pct,margin_bytes,compliant
+ARC-3 HMAC (SCH),210,84.0,40,True
+Ed25519 Signature,242,96.8,8,True
+COSE Sign1,254,101.6,-4,False
+X.509 Client Certificate,1931,772.4,-1681,False

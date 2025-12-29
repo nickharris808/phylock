@@ -1,0 +1,96 @@
+╔══════════════════════════════════════════════════════════════════════════╗
+║           ALL MARKDOWN FILES - RANKED BY MOST RECENT EDIT                ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+MOST RECENT (Dec 27, 2025 07:01 - Git Restore):
+═══════════════════════════════════════════════════════════════════════════
+Portfolio_B_Sovereign_Handshake/:
+  1. PEER_REVIEW_AUDIT.md (19KB)
+  2. HOSTILE_AUDIT_FINDINGS.md (17KB)
+  3. FIXES_APPLIED.md (11KB)
+  4. EXECUTIVE_SUMMARY.md (7KB)
+  5. DUE_DILIGENCE_FINAL.md (16KB)
+  6. DEEP_AUDIT_REPORT.md (17KB)
+  7. DATA_ROOM_README.md (15KB)
+  8. AIPP_SH_SPEC_V1.0.md (6KB)
+
+  Pillar READMEs (all 07:01):
+  9. 01_DGate_Cellular_Gating/README.md (1.4KB)
+  10. 02_UCRED_Stateless_Admission/README.md (1.6KB)
+  11. 03_PQLock_Hybrid_Fabric/README.md (1.8KB)
+  12. 04_ARC3_Channel_Binding/README.md (1.5KB)
+  13. 05_QSTF_IoT_Resilience/README.md (1.6KB)
+  14. 06_The_Technical_Knot/README.md (1.9KB)
+  15. 07_Hard_Engineering_Proofs/README.md (1.7KB)
+
+VERY RECENT (Dec 27, 2025 04:56 - Honesty Updates):
+═══════════════════════════════════════════════════════════════════════════
+docs/reports/:
+  16. PORTFOLIO_B_MASTER_SUMMARY.md ⭐ (15KB - MAIN DOC)
+  17. EXECUTIVE_ONE_PAGER.md (4KB)
+  18. COMPLETE_FIX_SUMMARY.md (12KB)
+
+RECENT (Dec 21, 2025 - Audit Phase):
+═══════════════════════════════════════════════════════════════════════════
+docs/audit/:
+  19. ✅_DEEP_AUDIT_COMPLETE.md (8KB)
+  20. FINAL_HONEST_SUMMARY.md (7KB)
+  21. CRITICAL_PEER_REVIEW.md (21KB - Detailed critique)
+
+RECENT (Dec 20, 2025 - Major Updates):
+═══════════════════════════════════════════════════════════════════════════
+docs/reports/:
+  22. 🏁_FINAL_COMPLETE.md (11KB)
+  23. 🎉_MISSION_COMPLETE.md (8KB)
+  24. PORTFOLIO_B_FINAL_SUMMARY_v4.1.md (7KB)
+  25. ⭐_AUDIT_COMPLETE.md (8KB)
+  26. ✅_FINAL_STATUS.md (14KB)
+  27. SOFT_COUPLING_STRATEGY.md (16KB - Ecosystem model)
+  28. PORTFOLIO_B_ULTIMATE_FINAL.md (8KB)
+  29. COMPLETE_STATUS_FINAL.md (8KB)
+  30. FINAL_ACCOMPLISHMENT_REPORT.md (17KB)
+  31. FIRST_PRINCIPLES_PHYSICS_UPGRADE.md (16KB - Physics details)
+  32. PORTFOLIO_B_FINAL_TRANSFORMATION.md (9KB)
+  33. BUG_FIX_REPORT_FINAL.md (12KB)
+  34. PORTFOLIO_B_CERTIFICATION.md (12KB)
+  35. VERIFICATION_REPORT.md (12KB - Test results)
+  36. PORTFOLIO_B_FIX_ROADMAP.md (18KB - Hardware validation plan)
+
+docs/audit/:
+  37. MANUAL_CODE_AUDIT_REPORT.md (18KB - Source code verification)
+  38. AUDIT_SUMMARY_ONE_PAGE.md (3KB)
+  39. DEEP_AUDIT_RESULTS.md (17KB)
+
+docs/:
+  40. INDEX.md (9KB)
+  41. DOCUMENTATION_INDEX.md (12KB)
+  42. NEXT_ACTIONS.md (8KB)
+
+OLDER (Dec 19 and earlier - Archive):
+═══════════════════════════════════════════════════════════════════════════
+docs/archive/:
+  43. PORTFOLIO_B_HONEST_FINAL_ASSESSMENT.md
+  44. PORTFOLIO_B_IMPROVED_FINAL.md
+  45. PORTFOLIO_B_ABSOLUTELY_FINAL.md
+  46. PORTFOLIO_B_FINAL_v3.1.md
+  47. PORTFOLIO_B_RESEARCH_COMPLETE.md
+  48. PORTFOLIO_B_FINAL_COMPREHENSIVE_STATUS.md
+  49. PORTFOLIO_B_COMPLETE.md
+  50. Portfolio_B_FINAL_STATUS.md
+  51. plan.md (Dec 18 - Original planning)
+
+Portfolio_B_Sovereign_Handshake/:
+  52. MARKDOWN_AUDIT_REPORT.md (Dec 19)
+
+TOTAL: 57 markdown files
+
+KEY DOCUMENTS TO READ (Most Important):
+═══════════════════════════════════════════════════════════════════════════
+1. docs/reports/PORTFOLIO_B_MASTER_SUMMARY.md ⭐ (Main technical overview)
+2. docs/audit/CRITICAL_PEER_REVIEW.md (Honest assessment)
+3. docs/reports/FIRST_PRINCIPLES_PHYSICS_UPGRADE.md (Physics details)
+4. Portfolio_B_Sovereign_Handshake/EXECUTIVE_SUMMARY.md (Portfolio overview)
+5. docs/reports/SOFT_COUPLING_STRATEGY.md (Ecosystem model)
+
+ROOT DIRECTORY: Currently empty of markdown files (all organized in subdirectories)
+

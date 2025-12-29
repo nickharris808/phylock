@@ -1,0 +1,86 @@
+subject_dn,canonical_dn,cbt_hex,expected_group,success
+"CN=example.com, OU=Engineering, O=Example Corp, C=US","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,happy,True
+"CN=api.example.com, OU=Platform, O=Example Inc, C=US","C=us, CN=api.example.com, O=example inc, OU=platform",3e3c604277e2b0ba,happy,True
+"CN=secure.example.org, OU=Security, O=Example Foundation, C=CH","C=ch, CN=secure.example.org, O=example foundation, OU=security",0e8609fe11d604d3,happy,True
+"CN=test.example.net, OU=QA, O=Example LLC, C=CA","C=ca, CN=test.example.net, O=example llc, OU=qa",31670955117d3f6a,happy,True
+"CN=prod.example.io, OU=Operations, O=Example Ltd, C=GB","C=gb, CN=prod.example.io, O=example ltd, OU=operations",97f6976c1cecbe88,happy,True
+"CN=dev.example.co, OU=Development, O=Example GmbH, C=DE","C=de, CN=dev.example.co, O=example gmbh, OU=development",8dd44d64bd39beb5,happy,True
+"CN=stage.example.fr, OU=Staging, O=Example SA, C=FR","C=fr, CN=stage.example.fr, O=example sa, OU=staging",d7798b150f576d61,happy,True
+"CN=app.example.es, OU=Applications, O=Example SL, C=ES","C=es, CN=app.example.es, O=example sl, OU=applications",1e2414a7ef3ca2f3,happy,True
+"CN=service.example.it, OU=Services, O=Example Srl, C=IT","C=it, CN=service.example.it, O=example srl, OU=services",a1da2d6807463527,happy,True
+"CN=web.example.nl, OU=Web, O=Example BV, C=NL","C=nl, CN=web.example.nl, O=example bv, OU=web",1997bd41ea067205,happy,True
+"CN=mail.example.se, OU=Email, O=Example AB, C=SE","C=se, CN=mail.example.se, O=example ab, OU=email",e01426b3897ec380,happy,True
+"CN=db.example.no, OU=Database, O=Example AS, C=NO","C=no, CN=db.example.no, O=example as, OU=database",473237bcf6c245b5,happy,True
+"CN=cache.example.dk, OU=Cache, O=Example ApS, C=DK","C=dk, CN=cache.example.dk, O=example aps, OU=cache",b179328a7088baca,happy,True
+"CN=cdn.example.fi, OU=CDN, O=Example Oy, C=FI","C=fi, CN=cdn.example.fi, O=example oy, OU=cdn",72aaeeae0cdceebd,happy,True
+"CN=lb.example.au, OU=LoadBalancer, O=Example Pty, C=AU","C=au, CN=lb.example.au, O=example pty, OU=loadbalancer",8231255594a7c874,happy,True
+"CN=vpn.example.nz, OU=VPN, O=Example Ltd, C=NZ","C=nz, CN=vpn.example.nz, O=example ltd, OU=vpn",28a6219909de76e5,happy,True
+"CN=proxy.example.sg, OU=Proxy, O=Example Pte, C=SG","C=sg, CN=proxy.example.sg, O=example pte, OU=proxy",2952c6a050831232,happy,True
+"CN=gateway.example.hk, OU=Gateway, O=Example Ltd, C=HK","C=hk, CN=gateway.example.hk, O=example ltd, OU=gateway",498864443ea77147,happy,True
+"CN=router.example.tw, OU=Network, O=Example Co, C=TW","C=tw, CN=router.example.tw, O=example co, OU=network",768a9491122bdda6,happy,True
+"CN=firewall.example.kr, OU=Security, O=Example Inc, C=KR","C=kr, CN=firewall.example.kr, O=example inc, OU=security",791d6ff07567d30d,happy,True
+"CN=example.com,OU=Engineering,O=Example Corp,C=US","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,whitespace_group_1,True
+"CN=example.com ,  OU=Engineering ,  O=Example Corp ,  C=US","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,whitespace_group_1,True
+"  CN=example.com, OU=Engineering, O=Example Corp, C=US  ","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,whitespace_group_1,True
+"CN= example.com , OU= Engineering , O= Example Corp , C= US ","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,whitespace_group_1,True
+"CN=example.com  , OU=Engineering  , O=Example  Corp, C=US","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,whitespace_group_1,True
+"CN=example.com, OU=Engineering, O=Example Corp, C=US","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,whitespace_group_1,True
+"cn=example.com, ou=Engineering, o=Example Corp, c=US","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,whitespace_group_1,True
+"cN=example.com, Ou=Engineering, O=Example Corp, C=US","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,whitespace_group_1,True
+"CN=EXAMPLE.COM, OU=ENGINEERING, O=EXAMPLE CORP, C=US","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,whitespace_group_1,True
+"CN=Example.Com, OU=Engineering, O=Example Corp, C=US","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,whitespace_group_1,True
+"CN=example.com,OU=Engineering, O=Example Corp,C=US","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,whitespace_group_1,True
+"CN=example.com, OU=Engineering,O=Example Corp, C=US","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,whitespace_group_1,True
+"CN=example.com,    OU=Engineering,    O=Example Corp,    C=US","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,whitespace_group_1,True
+"CN=example.com	,	OU=Engineering	,	O=Example Corp	,	C=US","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,whitespace_group_1,True
+"CN=example.com, OU=Engineering, O=Example Corp, C=US","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,whitespace_group_1,True
+"CN=café.com, OU=Engineering, O=Example Corp, C=FR","C=fr, CN=café.com, O=example corp, OU=engineering",5e44ec4a887ad994,unicode_4,True
+"CN=café.com, OU=Engineering, O=Example Corp, C=FR","C=fr, CN=café.com, O=example corp, OU=engineering",5e44ec4a887ad994,unicode_4,True
+"CN=Zürich.ch, OU=Operations, O=Swiss Corp, C=CH","C=ch, CN=zürich.ch, O=swiss corp, OU=operations",e0b27b924f005d5d,unicode_1,True
+"CN=Москва.ru, OU=Engineering, O=Russian Corp, C=RU","C=ru, CN=москва.ru, O=russian corp, OU=engineering",d69f3b3ba9c5fdb5,unicode_1,True
+"CN=東京.jp, OU=Development, O=Tokyo Corp, C=JP","C=jp, CN=東京.jp, O=tokyo corp, OU=development",f26c81ec7d4506ab,unicode_4,True
+"CN=서울.kr, OU=Platform, O=Seoul Corp, C=KR","C=kr, CN=서울.kr, O=seoul corp, OU=platform",80808a3e78f23624,unicode_2,True
+"CN=ñoño.es, OU=Support, O=Spanish Corp, C=ES","C=es, CN=ñoño.es, O=spanish corp, OU=support",926406b970f9e611,unicode_1,True
+"CN=São Paulo.br, OU=Sales, O=Brazil Corp, C=BR","C=br, CN=são paulo.br, O=brazil corp, OU=sales",5598defc566b38c0,unicode_4,True
+"CN=Montréal.ca, OU=Marketing, O=Quebec Corp, C=CA","C=ca, CN=montréal.ca, O=quebec corp, OU=marketing",6309163d1b75884c,unicode_0,True
+"CN=Kraków.pl, OU=R&D, O=Polish Corp, C=PL","C=pl, CN=kraków.pl, O=polish corp, OU=r&d",ac652cdd4da9714b,unicode_0,True
+"CN=İstanbul.tr, OU=Finance, O=Turkish Corp, C=TR","C=tr, CN=i̇stanbul.tr, O=turkish corp, OU=finance",278790c09729057e,unicode_2,True
+"CN=Αθήνα.gr, OU=Legal, O=Greek Corp, C=GR","C=gr, CN=αθήνα.gr, O=greek corp, OU=legal",f8eaf3cf1abdf02e,unicode_2,True
+"CN=القاهرة.eg, OU=Admin, O=Egyptian Corp, C=EG","C=eg, CN=القاهرة.eg, O=egyptian corp, OU=admin",962912f4810c822e,unicode_1,True
+"CN=עברית.il, OU=Security, O=Israeli Corp, C=IL","C=il, CN=עברית.il, O=israeli corp, OU=security",f6b8ef39aa876b33,unicode_2,True
+"CN=中文.cn, OU=Cloud, O=Chinese Corp, C=CN","C=cn, CN=中文.cn, O=chinese corp, OU=cloud",3bad0929f90efe75,unicode_4,True
+"CN=xn--caf-dma.com, OU=Engineering, O=Example Corp, C=FR","C=fr, CN=xn--caf-dma.com, O=example corp, OU=engineering",bfe992b0540cdb27,punycode_1,True
+"CN=münchen.de, OU=Engineering, O=German Corp, C=DE","C=de, CN=münchen.de, O=german corp, OU=engineering",a915edcc02c1a4e8,punycode_2,True
+"CN=日本.jp, OU=Operations, O=Japan Corp, C=JP","C=jp, CN=日本.jp, O=japan corp, OU=operations",554bb03193a230b9,punycode_0,True
+"CN=xn--wgbh1c.eg, OU=Admin, O=Egyptian Corp, C=EG","C=eg, CN=xn--wgbh1c.eg, O=egyptian corp, OU=admin",0b09b83501f496d8,punycode_2,True
+"CN=россия.ru, OU=Engineering, O=Russian Corp, C=RU","C=ru, CN=россия.ru, O=russian corp, OU=engineering",ce67e2efc87159a1,punycode_1,True
+"CN=xn--ngbrx4e.sa, OU=Cloud, O=Arabic Corp, C=SA","C=sa, CN=xn--ngbrx4e.sa, O=arabic corp, OU=cloud",442b96bd0144606b,punycode_2,True
+"CN=भारत.in, OU=Platform, O=Indian Corp, C=IN","C=in, CN=भारत.in, O=indian corp, OU=platform",3cd907ef6fd71397,punycode_2,True
+"CN=xn--h2brj9c.in, OU=Platform, O=Indian Corp, C=IN","C=in, CN=xn--h2brj9c.in, O=indian corp, OU=platform",8528ca3886c39315,punycode_1,True
+"CN=대한민국.kr, OU=Network, O=Korean Corp, C=KR","C=kr, CN=대한민국.kr, O=korean corp, OU=network",3c45e97fdbd946ed,punycode_0,True
+"CN=中国.cn, OU=Security, O=Chinese Corp, C=CN","C=cn, CN=中国.cn, O=chinese corp, OU=security",e179a7acbef11a14,punycode_1,True
+"O=Example Corp, C=US, OU=Engineering, CN=example.com","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,ordering_group_1,True
+"C=US, O=Example Corp, CN=example.com, OU=Engineering","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,ordering_group_1,True
+"O=Example Corp, C=US, OU=Engineering, CN=example.com","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,ordering_group_1,True
+"C=US, OU=Engineering, CN=example.com, O=Example Corp","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,ordering_group_1,True
+"CN=example.com, OU=Engineering, C=US, O=Example Corp","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,ordering_group_1,True
+"CN=example.com, OU=Engineering, O=Example Corp, C=US","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,ordering_group_1,True
+"CN=example.com, C=US, OU=Engineering, O=Example Corp","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,ordering_group_1,True
+"O=Example Corp, OU=Engineering, CN=example.com, C=US","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,ordering_group_1,True
+"O=Example Corp, OU=Engineering, CN=example.com, C=US","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,ordering_group_1,True
+"OU=Engineering, C=US, CN=example.com, O=Example Corp","C=us, CN=example.com, O=example corp, OU=engineering",34eeeceb06038e0c,ordering_group_1,True
+"CN=comma\,test.com, OU=Engineering, O=Example Corp, C=US","C=us, CN=comma\, O=example corp, OU=engineering",0dc7c7924614ea24,escape_1,True
+"CN=plus\+sign.com, OU=Engineering, O=Example Corp, C=US","C=us, CN=plus\+sign.com, O=example corp, OU=engineering",b86a2ccc76f15837,escape_1,True
+"CN=equals\=sign.com, OU=Engineering, O=Example Corp, C=US","C=us, CN=equals\=sign.com, O=example corp, OU=engineering",3dccfe916d1deff3,escape_2,True
+"CN=less\<than.com, OU=Engineering, O=Example Corp, C=US","C=us, CN=less\<than.com, O=example corp, OU=engineering",da6e92a8cb9cb71a,escape_1,True
+"CN=greater\>than.com, OU=Engineering, O=Example Corp, C=US","C=us, CN=greater\>than.com, O=example corp, OU=engineering",826fd5a72709974e,escape_2,True
+"CN=hash\#sign.com, OU=Engineering, O=Example Corp, C=US","C=us, CN=hash\#sign.com, O=example corp, OU=engineering",fe7036d9ec9be2cc,escape_2,True
+"CN=semicolon\;test.com, OU=Engineering, O=Example Corp, C=US","C=us, CN=semicolon\;test.com, O=example corp, OU=engineering",a82ed585dde4158f,escape_2,True
+"CN=quote\""test.com, OU=Engineering, O=Example Corp, C=US","C=us, CN=quote\""test.com, O=example corp, OU=engineering",54a1e0e06893d908,escape_0,True
+"CN=backslash\\test.com, OU=Engineering, O=Example Corp, C=US","C=us, CN=backslash\\test.com, O=example corp, OU=engineering",65bc1e67b4d1a00c,escape_0,True
+"CN=space\ test.com, OU=Engineering, O=Example Corp, C=US","C=us, CN=space\ test.com, O=example corp, OU=engineering",b5e42a73191fd908,escape_1,True
+"CN=example.com, O=Example Corp, C=US","C=us, CN=example.com, O=example corp",e05c4349281c31f7,empty_0,True
+"CN=example.com, OU=Engineering, C=US","C=us, CN=example.com, OU=engineering",2619bc238b3231d7,empty_0,True
+"CN=example.com, C=US","C=us, CN=example.com",c73d5d0e60dbfd0b,empty_1,True
+CN=example.com,CN=example.com,a6d3040f4bfc9c08,empty_1,True
+"CN=example.com, OU=, O=Example Corp, C=US","C=us, CN=example.com, O=example corp",e05c4349281c31f7,empty_0,True

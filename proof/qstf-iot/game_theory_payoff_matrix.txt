@@ -1,0 +1,14 @@
+QSTF-V2 Erasure Code Game Theory Analysis
+================================================================================
+
+Zero-Sum Game: Device vs. Adversarial Jammer
+Payoff: Battery-per-Bit-Recovered (Lower is Better for Device)
+
+Device Strategy      vs. Random      vs. Intelligent
+--------------------------------------------------
+repetition           6.15            13.71          
+standard_rs          2.55            2.93           
+xor_weighted         1.59            1.63           
+
+Nash Equilibrium: (XOR-Weighted, Intelligent)
+Proof: XOR-Weighted is the min-max optimal strategy.

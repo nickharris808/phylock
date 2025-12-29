@@ -1,0 +1,7 @@
+component_removed,system_state,kpi_failures,failures
+Grid_Sync,FUNCTIONAL (Degraded),2,"NB-IoT Battery, NERC Compliance"
+ARC3_Radio,FUNCTIONAL (Degraded),1,Post-Quantum Security
+UCRED_Stateless,FUNCTIONAL (Degraded),1,Edge Scalability
+PQLock_Crypto,FUNCTIONAL (Degraded),2,"URLLC Latency, NB-IoT Battery"
+QSTF_IoT,FUNCTIONAL (Degraded),2,"URLLC Latency, NB-IoT Battery"
+Technical_Knot,FUNCTIONAL (Degraded),1,NERC Compliance

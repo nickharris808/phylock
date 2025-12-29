@@ -1,0 +1,7 @@
+frame,expected,actual,ie_count,expected_ie_count,success,error
+valid_full.hex,ACCEPT,ACCEPT,5,5,True,
+valid_minimal.hex,ACCEPT,ACCEPT,2,2,True,
+malformed_length.hex,REJECT,REJECT,0,0,True,Malformed IE at offset 0
+malformed_type.hex,ACCEPT,ACCEPT,1,2,False,
+legacy_skip.hex,ACCEPT,ACCEPT,1,3,False,
+valid_fragmented.hex,ACCEPT,ACCEPT,3,3,True,

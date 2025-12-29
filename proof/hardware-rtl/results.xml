@@ -1,0 +1,7 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1767035723" />
+    <testcase name="test_deterministic_latency" classname="test_sh_gate" file="/Users/nharris/Desktop/telecom/Portfolio_B_Sovereign_Handshake/07_Hard_Engineering_Proofs/test_sh_gate.py" lineno="1" time="0.0011248588562011719" sim_time_ns="14.0" ratio_time="12446.005934718101" />
+    <testcase name="test_adversarial_rejection" classname="test_sh_gate" file="/Users/nharris/Desktop/telecom/Portfolio_B_Sovereign_Handshake/07_Hard_Engineering_Proofs/test_sh_gate.py" lineno="1" time="0.0007197856903076172" sim_time_ns="23.0" ratio_time="31953.955614441868" />
+  </testsuite>
+</testsuites>

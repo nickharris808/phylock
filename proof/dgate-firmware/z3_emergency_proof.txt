@@ -1,0 +1,25 @@
+D-Gate+ Sovereign Exception FSM (12-State) Formal Proof
+================================================================================
+
+Extended State Machine:
+  0: Strong_First
+  1: Hold_and_Scan
+  2: Permit_Check
+  3: Sovereign_Attach
+  4: Reject
+  5: Emergency_Request
+  6: Distress_Permit_Check
+  7: Emergency_Attach
+  8: CSFB_Request
+  9: CSFB_Permit_Check
+ 10: CSFB_Attach
+ 11: Hard_Reject
+
+Safety Invariants Tested:
+  1. Emergency_Attach requires Distress_Permit: unsat
+  2. CSFB_Attach requires Standard_Permit:      unsat
+  3. Sovereign_Attach requires Authorization:   unsat
+
+CONCLUSION: All 3 safety invariants are PROVEN.
+The 12-state Sovereign FSM achieves Safety-Liveness Termination
+across all protocol exceptions including Emergency and CSFB paths.

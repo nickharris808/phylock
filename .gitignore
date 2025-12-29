@@ -1,0 +1,57 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Simulation outputs (regenerated on run)
+*.db
+*.vcd
+
+# Build artifacts
+sim_build/
+*.vvp
+
+# =============================================================================
+# CONFIDENTIAL - DATA ROOM PROTECTED
+# These files require NDA access. Do not commit to public repository.
+# =============================================================================
+
+# Provisional Patent Applications (Legal IP - Claims & Enablement)
+**/PROVISIONAL_PATENT_*.md
+
+# Verilog RTL (Hardware Implementation Details)
+**/*.v
+
+# White Papers (Deep Technical Documentation)
+whitepapers/

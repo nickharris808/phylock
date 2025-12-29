@@ -1,0 +1,19 @@
+PQLock Phase 4.3: Fixed Thermal Envelope Constraint Analysis
+================================================================================
+
+Edge Drone (TDP: 15W)
+  Temp without Knot: 100.0°C
+  Temp with Knot:    60.0°C
+  Thermal Margin:    25.0°C
+
+LEO Satellite (TDP: 50W)
+  Temp without Knot: 17.5°C
+  Temp with Knot:    -2.5°C
+  Thermal Margin:    87.5°C
+
+Data Center Server (TDP: 300W)
+  Temp without Knot: 32.5°C
+  Temp with Knot:    28.5°C
+  Thermal Margin:    56.5°C
+
+CONCLUSION: Temporal Phase-Locking is mandatory for PQC in weight/space-constrained systems.
