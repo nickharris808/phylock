@@ -378,4 +378,4 @@ cat Portfolio_B_Sovereign_Handshake/BUSINESS_SUMMARY.md
 
 **Last Updated:** December 28, 2025  
 **Validation:** `python validate_all_experiments.py` → 59/59 PASS  
-**Repository:** https://github.com/nickharris808/telecom
+**Repository:** https://github.com/nickharris808/phylock
