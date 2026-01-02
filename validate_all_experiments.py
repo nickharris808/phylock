@@ -31,9 +31,11 @@ from datetime import datetime
 # CONFIGURATION
 # ============================================================================
 
-BASE_DIR = "/Users/nharris/Desktop/telecom/proof"
-PCAP_DIR = "/Users/nharris/Desktop/telecom/attacks"
-HLS_DIR = "/Users/nharris/Desktop/telecom/silicon"
+# Use the directory where this script lives as the base
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.join(SCRIPT_DIR, "proof")
+PCAP_DIR = os.path.join(SCRIPT_DIR, "attacks")
+HLS_DIR = os.path.join(SCRIPT_DIR, "silicon")
 
 # ============================================================================
 # TEST RUNNER
@@ -225,6 +227,34 @@ def get_hardening_proofs():
          "python3 quantum_black_swan.py", "QUANTUM BLACK SWAN RESILIENCE"),
     ]
 
+def get_supporting_proofs():
+    """Supporting Systems proofs (6 additional families)."""
+    return [
+        # NTN Satellite Handover
+        ("NTN: LEO Orbital Handover",
+         os.path.join(BASE_DIR, "ntn-satellite/leo_orbital_handover.py"),
+         "python3 leo_orbital_handover.py", "SPACE MONOPOLY PROVEN"),
+        
+        # Thermal Attestation
+        ("Thermal: DPA Side-Channel Protection",
+         os.path.join(BASE_DIR, "thermal-attestation/thermal_attestation_permit.py"),
+         "python3 thermal_attestation_permit.py", "All experiments completed successfully"),
+        
+        # KeyCast Epoch Rotation
+        ("KeyCast: Zero-Signaling Rotation",
+         os.path.join(BASE_DIR, "keycast-rotation/keycast_epoch_rotation.py"),
+         "python3 keycast_epoch_rotation.py", "All experiments completed successfully"),
+        
+        # Grid Coupling Additional Tests
+        ("Grid: Circular Dependency Proof",
+         os.path.join(BASE_DIR, "grid-coupling/circular_dependency_proof.py"),
+         "python3 circular_dependency_proof.py", "SYSTEM VALUE DEMONSTRATED"),
+        
+        ("Grid: VPP Energy Integration",
+         os.path.join(BASE_DIR, "grid-coupling/green_grid_vpp.py"),
+         "python3 green_grid_vpp.py", "ESG MONOPOLY PROVEN"),
+    ]
+
 def get_pcap_files():
     """Red Team PCAP files."""
     return [
@@ -261,7 +291,7 @@ def get_hls_files():
 
 def get_legal_files():
     """Litigation Pack files."""
-    legal_dir = "/Users/nharris/Desktop/telecom/legal"
+    legal_dir = os.path.join(SCRIPT_DIR, "legal")
     return [
         ("Legal: ARC-3 Claim Chart",
          os.path.join(legal_dir, "CLAIM_CHART_ARC3_TS33501.md")),
@@ -269,15 +299,21 @@ def get_legal_files():
          os.path.join(legal_dir, "CLAIM_CHART_DGATE_TS24501.md")),
         ("Legal: PQLock Claim Chart",
          os.path.join(legal_dir, "CLAIM_CHART_PQLOCK_TS33501.md")),
+        ("Legal: QSTF Claim Chart",
+         os.path.join(legal_dir, "CLAIM_CHART_QSTF_TS38331.md")),
+        ("Legal: U-CRED Claim Chart",
+         os.path.join(legal_dir, "CLAIM_CHART_UCRED_TS33501.md")),
         ("Legal: Prior Art Analysis",
          os.path.join(legal_dir, "PRIOR_ART_ANALYSIS_ALL_FAMILIES.md")),
         ("Legal: SEP Summary",
          os.path.join(legal_dir, "SEP_ESSENTIALITY_SUMMARY.md")),
+        ("Legal: Litigation Pack Complete",
+         os.path.join(legal_dir, "LITIGATION_PACK_COMPLETE.md")),
     ]
 
 def get_standards_files():
     """Standards-Ready Pack files."""
-    standards_dir = "/Users/nharris/Desktop/telecom/docs/standards"
+    standards_dir = os.path.join(SCRIPT_DIR, "docs", "standards")
     return [
         ("Standards: PQLock CR001",
          os.path.join(standards_dir, "3GPP_TS33.501_CR001_PQLock_Hybrid_PQC.md")),
@@ -285,6 +321,10 @@ def get_standards_files():
          os.path.join(standards_dir, "3GPP_TS33.501_CR002_ARC3_Physical_Layer_Binding.md")),
         ("Standards: D-Gate+ CR001",
          os.path.join(standards_dir, "3GPP_TS24.501_CR001_DGate_Firmware_Security_Gating.md")),
+        ("Standards: Index",
+         os.path.join(standards_dir, "3GPP_STANDARDS_READY_PACK_INDEX.md")),
+        ("Standards: Complete Report",
+         os.path.join(standards_dir, "STANDARDS_READY_PACK_COMPLETE_REPORT.md")),
     ]
 
 # ============================================================================
@@ -305,6 +345,7 @@ def main():
     results = {
         "original": [],
         "hardening": [],
+        "supporting": [],
         "pcaps": [],
         "hls": [],
         "legal": [],
@@ -332,9 +373,19 @@ def main():
         results["hardening"].append(passed)
     
     # -------------------------------------------------------------------------
-    # Section 3: Red Team PCAPs
+    # Section 3: Supporting Systems Proofs
     # -------------------------------------------------------------------------
-    print("\n📋 SECTION 3: Red Team PCAP Files (6 files)")
+    print("\n📋 SECTION 3: Supporting Systems Proofs (5 tests)")
+    print("-" * 50)
+    
+    for name, path, cmd, validation in get_supporting_proofs():
+        passed = run_test(name, path, cmd, validation)
+        results["supporting"].append(passed)
+    
+    # -------------------------------------------------------------------------
+    # Section 4: Red Team PCAPs
+    # -------------------------------------------------------------------------
+    print("\n📋 SECTION 4: Red Team PCAP Files (6 files)")
     print("-" * 50)
     
     for name, path in get_pcap_files():
@@ -342,9 +393,9 @@ def main():
         results["pcaps"].append(passed)
     
     # -------------------------------------------------------------------------
-    # Section 4: Silicon-Ready HLS
+    # Section 5: Silicon-Ready HLS
     # -------------------------------------------------------------------------
-    print("\n📋 SECTION 4: Silicon-Ready HLS Files (6 files)")
+    print("\n📋 SECTION 5: Silicon-Ready HLS Files (6 files)")
     print("-" * 50)
     
     for name, path in get_hls_files():
@@ -352,9 +403,9 @@ def main():
         results["hls"].append(passed)
     
     # -------------------------------------------------------------------------
-    # Section 5: Litigation Pack
+    # Section 6: Litigation Pack
     # -------------------------------------------------------------------------
-    print("\n📋 SECTION 5: Litigation Pack Files (5 files)")
+    print("\n📋 SECTION 6: Litigation Pack Files (8 files)")
     print("-" * 50)
     
     for name, path in get_legal_files():
@@ -362,9 +413,9 @@ def main():
         results["legal"].append(passed)
     
     # -------------------------------------------------------------------------
-    # Section 6: Standards-Ready Pack
+    # Section 7: Standards-Ready Pack
     # -------------------------------------------------------------------------
-    print("\n📋 SECTION 6: Standards-Ready Pack Files (3 files)")
+    print("\n📋 SECTION 7: Standards-Ready Pack Files (5 files)")
     print("-" * 50)
     
     for name, path in get_standards_files():
@@ -386,6 +437,7 @@ def main():
     sections = [
         ("Original 8-Week Proofs", results["original"]),
         ("Deep Hardening Proofs", results["hardening"]),
+        ("Supporting Systems Proofs", results["supporting"]),
         ("Red Team PCAPs", results["pcaps"]),
         ("Silicon-Ready HLS", results["hls"]),
         ("Litigation Pack", results["legal"]),

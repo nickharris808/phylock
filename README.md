@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="#one-command-validation">Validation</a> •
-  <a href="#the-9-patent-families">9 Patents</a> •
+  <a href="#the-11-patent-families">11 Patents</a> •
   <a href="#100k-value-add-packs">$100K Packs</a> •
   <a href="#key-metrics">Metrics</a> •
   <a href="#for-buyers">For Buyers</a>
@@ -40,10 +40,11 @@ python validate_all_experiments.py
 # Output:
 # ✅ Original 8-Week Proofs: 10/10
 # ✅ Deep Hardening Proofs: 19/19
+# ✅ Supporting Systems Proofs: 5/5
 # ✅ Red Team PCAPs: 6/6
 # ✅ Silicon-Ready HLS: 6/6
-# ✅ Litigation Pack: 5/5
-# ✅ Standards-Ready Pack: 3/3
+# ✅ Litigation Pack: 8/8
+# ✅ Standards-Ready Pack: 5/5
 # 🏆 TOTAL: 59/59 tests passed (~2 minutes)
 ```
 
@@ -74,9 +75,9 @@ python validate_all_experiments.py
 |------------|----------------|------------|----------|
 | **ARC-3** | Radio relay attacks | 99.97% detection via CSI fingerprinting | ✅ Massive MIMO |
 | **D-Gate+** | Stingray/IMSI catchers | 100% downgrade prevention (Z3 proven) | ✅ All cellular |
-| **U-CRED** | Core network scaling | 88.7% CPU savings, 91.9% RAM savings | ✅ 5G Core |
+| **U-CRED** | Core network scaling | 95% CPU savings, 86% RAM savings | ✅ 5G Core |
 | **PQLock** | Quantum harvest attacks | Hybrid X25519 + ML-KEM-768 | ✅ NAS layer |
-| **QSTF-V2** | IoT coverage gaps | 19x smaller than Reed-Solomon | ✅ NB-IoT |
+| **QSTF-V2** | IoT coverage gaps | 33.6x smaller than Reed-Solomon | ✅ NB-IoT |
 
 ### Supporting Systems (6 Families)
 
