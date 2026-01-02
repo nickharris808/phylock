@@ -1,7 +1,7 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1767372100" />
-    <testcase name="test_deterministic_latency" classname="test_sh_gate" file="/Users/nharris/phylock/proof/hardware-rtl/test_sh_gate.py" lineno="10" time="0.0015149116516113281" sim_time_ns="14.0" ratio_time="9241.463015423355" />
-    <testcase name="test_adversarial_rejection" classname="test_sh_gate" file="/Users/nharris/phylock/proof/hardware-rtl/test_sh_gate.py" lineno="58" time="0.0008530616760253906" sim_time_ns="23.0" ratio_time="26961.70821688094" />
+    <property name="random_seed" value="1767374011" />
+    <testcase name="test_deterministic_latency" classname="test_sh_gate" file="/Users/nharris/phylock/proof/hardware-rtl/test_sh_gate.py" lineno="10" time="0.0012810230255126953" sim_time_ns="14.0" ratio_time="10928.76530802159" />
+    <testcase name="test_adversarial_rejection" classname="test_sh_gate" file="/Users/nharris/phylock/proof/hardware-rtl/test_sh_gate.py" lineno="58" time="0.000885009765625" sim_time_ns="23.0" ratio_time="25988.41379310345" />
   </testsuite>
 </testsuites>
